@@ -1,13 +1,12 @@
-// Animations
+
 AOS.init({
   anchorPlacement: 'top-left',
   duration: 1000
 });
 
-// Função para buscar e atualizar contador
 async function updateVisitorCount() {
     try {
-        const response = await fetch('https://p8mzzliv1b.execute-api.us-east-1.amazonaws.com/prod/visitor', {
+        const response = await fetch('https://vqb0v0vgj0.execute-api.us-east-1.amazonaws.com/visitors', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -22,5 +21,4 @@ async function updateVisitorCount() {
     }
 }
 
-// Chama a função quando a página carrega
 window.addEventListener('load', updateVisitorCount);
