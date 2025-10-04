@@ -1,18 +1,23 @@
-# 🌐 Cloud Resume Challenge - Frontend
-🔗 [Acesse o site aqui](https://pedrobortolini.com.br)
+# Cloud Resume Challenge - Frontend
 
-Este projeto faz parte do **Cloud Resume Challenge**, onde desenvolvi a primeira etapa do desafio: a criação e automação do deploy de um site estático hospedado na AWS.
+🔗 [View the site here](https://pedrobortolini.com.br)
 
-## 🚀 Tecnologias utilizadas
-- **HTML, CSS, JavaScript** para o site estático  
-- **Amazon S3** para hospedagem  
-- **Amazon CloudFront + Certificate Manager** para distribuição global com HTTPS  
-- **Route 53 + Registro.br** para gerenciamento de domínio  
-- **GitHub Actions** para automação de deploy (CI/CD)  
+This project is part of the **Cloud Resume Challenge**, in which I completed the first stage: developing and automating the deployment of a static website hosted on AWS.
 
-## 📌 Funcionalidades
-- Site pessoal/currículo hospedado em nuvem  
-- Deploy automatizado: ao fazer `git push`, o site é atualizado automaticamente  
+## Technologies Used
 
-## 🔜 Próximos passos
-- Integração com API (AWS Lambda + API Gateway + DynamoDB) para exibir o contador de visitantes  
+* **HTML, CSS, JavaScript** for the static website
+* **Amazon S3** for hosting
+* **Amazon CloudFront with Certificate Manager** for global distribution with HTTPS
+* **Route 53 and Registro.br** for domain management
+* **GitHub Actions** for deployment automation (CI/CD)
+
+## Features
+
+* Personal website/resume hosted in the cloud
+* Automated deployment: the site updates automatically with every `git push`
+
+## Next Steps
+
+* Integrate with an API (AWS Lambda + API Gateway + DynamoDB) to display a visitor counter
+
