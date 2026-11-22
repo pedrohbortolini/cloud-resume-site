@@ -14,3 +14,6 @@ desktop.ini
 # Saved plans (contain resource details)
 tfplan
 *.tfplan
+
+# Editor settings
+.vscode/
