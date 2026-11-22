@@ -2,297 +2,211 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pedro Bortolini | Resume</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.1" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
+    <meta name="description" content="Pedro Bortolini, AWS Certified Solutions Architect working in security operations. Experience, skills, certifications and projects.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pedro Bortolini | Resume">
+    <meta property="og:description" content="AWS Certified Solutions Architect working in security operations.">
+    <meta property="og:image" content="images/avatar.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23171717'/%3E%3Ctext x='16' y='21.5' font-family='system-ui,sans-serif' font-size='15' font-weight='600' fill='%23fff' text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+    <link rel="stylesheet" href="css/main.css?ver=2.1.0">
   </head>
-  <body class="bg-light" id="top">
-    <header class="d-print-none">
-      <div class="container text-center text-lg-left">
-        <div class="pt-4 clearfix">
-          <h1 class="site-title mb-0">Pedro Bortolini</h1>
-          <div class="site-nav"> 
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#certifications" title="Certifications"><span class="menu-title">Certifications</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">Portfolio</span></a>
-                </li>
-  
-                <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+  <body>
+    <!-- Icon sprite: inline SVG replaces the Font Awesome bundle (one request less, a few KB instead of MBs). -->
+    <svg width="0" height="0" class="sprite" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.75 5.7 3.75 9S14.5 18.3 12 21c-2.5-2.7-3.75-5.7-3.75-9S9.5 5.7 12 3z"/></g></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="nav-name" href="#top">Pedro Bortolini</a>
+        <nav aria-label="Sections">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <div class="page-content">
-      <div class="container">
-<div class="resume-container">
-  <div class="shadow-1-strong bg-white my-5" id="intro">
-    <div class="bg-info text-white">
-      <div class="cover bg-image"><img src="images/header-background.png"/>
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
-          <div class="text-center p-5">
-            <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg" width="160" height="160"/></div>
-            <div class="header-bio mt-3">
-              <div data-aos="zoom-in" data-aos-delay="0">
-                <h2 class="h1">Pedro Bortolini</h2>
-                <p>Security &amp; Cloud Infrastructure</p>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <!-- Soft mesh gradient: the only decoration on the page, kept behind the hero. -->
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <img class="avatar" src="images/avatar.jpg" alt="Portrait of Pedro Bortolini" width="112" height="112" fetchpriority="high">
+          <h1 translate="no">Pedro Bortolini</h1>
+          <p class="hero-role">Security &amp; Cloud Infrastructure</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:pedrowbortolini@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/pedrobortolini"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/pedrohbortolini"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Each section: mono label on the left, content on the right; stacks on narrow screens. -->
+      <section class="block" id="about" aria-labelledby="about-title">
+        <div class="wrap block-grid">
+          <h2 class="label" id="about-title">About me</h2>
+          <div>
+            <p class="lead">AWS Certified Solutions Architect working in security operations, with hands-on experience in Linux and AWS production environments. Driven by understanding how systems fit together and automating what used to be manual. Currently deepening my knowledge of Kubernetes and container orchestration.</p>
+            <dl class="facts">
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</dt><dd>pedrowbortolini@gmail.com</dd></div>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Languages</dt><dd>Portuguese (native), English (fluent), Spanish (intermediate)</dd></div>
+              <div><dt><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Location</dt><dd>Porto Alegre, Brazil</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="skills" aria-labelledby="skills-title">
+        <div class="wrap block-grid">
+          <h2 class="label" id="skills-title">Skills</h2>
+          <!-- Grouped list instead of percentage bars: self-rated percentages carry no real information. -->
+          <dl class="skills" translate="no">
+            <div><dt>Cloud</dt><dd><span class="chip">AWS</span><span class="chip">S3</span><span class="chip">CloudFront</span><span class="chip">ECS Fargate</span><span class="chip">ECR</span><span class="chip">IAM</span><span class="chip">VPC</span><span class="chip">CloudWatch</span><span class="chip">Secrets Manager</span></dd></div>
+            <div><dt>Infrastructure as Code</dt><dd><span class="chip">Terraform</span></dd></div>
+            <div><dt>CI/CD</dt><dd><span class="chip">GitHub Actions</span></dd></div>
+            <div><dt>Containers &amp; Orchestration</dt><dd><span class="chip">Docker</span><span class="chip">Kubernetes</span></dd></div>
+            <div><dt>Monitoring</dt><dd><span class="chip">CloudWatch</span><span class="chip">Nagios</span><span class="chip">Wazuh</span></dd></div>
+            <div><dt>Security</dt><dd><span class="chip">IAM</span><span class="chip">IPsec VPN</span><span class="chip">TLS</span><span class="chip">Encryption at rest</span><span class="chip">CVE remediation</span></dd></div>
+            <div><dt>Systems &amp; Virtualization</dt><dd><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">VMware</span><span class="chip">Proxmox</span></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="block" id="experience" aria-labelledby="experience-title">
+        <div class="wrap block-grid">
+          <h2 class="label" id="experience-title">Work Experience</h2>
+          <div class="entries">
+            <article class="entry">
+              <div class="entry-head">
+                <h3>Junior SOC Analyst <span class="org">E-Trust</span></h3>
+                <p class="date">September, 2025 - Present</p>
               </div>
-<div class="d-print-none"></div>
-                <nav role="navigation">
-                  <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/pedrobortolini" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/pedrohbortolini" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                    </li>
-                  </ul>
-                </nav>
-             <div class="d-print-none"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="about">
-    <div class="about-section">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="h2 fw-light mb-4">About me</h2>
-          <p>AWS Certified Solutions Architect working in security operations, with hands-on experience in Linux and AWS production environments. Driven by understanding how systems fit together and automating what used to be manual. Currently deepening my knowledge of Kubernetes and container orchestration.</p>
-        </div>
-        <div class="col-md-5 offset-lg-1">
-          <div class="row mt-2">
-            <h2 class="h2 fw-light mb-4">Bio</h2>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">pedrowbortolini@gmail.com</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-language pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Languages</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">Portuguese (native), English (fluent), Spanish (intermediate)</div>
-            </div>
-            <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Location</div>
-            </div>
-            <div class="col-sm-7">
-              <div class="pb-2">Porto Alegre, Brazil</div>
-            </div>
-            <div class="col-sm-5">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
-    <div class="skills-section">
-      <h2 class="h2 fw-light mb-4">Skills</h2>
-      <!-- Grouped list instead of percentage bars: self-rated percentages carry no real information. -->
-      <div class="row">
-        <div class="col-sm-4 pb-2 fw-bolder">Cloud</div>
-        <div class="col-sm-8 pb-3">AWS (S3, CloudFront, ECS Fargate, ECR, IAM, VPC, CloudWatch, Secrets Manager)</div>
-        <div class="col-sm-4 pb-2 fw-bolder">Infrastructure as Code</div>
-        <div class="col-sm-8 pb-3">Terraform</div>
-        <div class="col-sm-4 pb-2 fw-bolder">CI/CD</div>
-        <div class="col-sm-8 pb-3">GitHub Actions</div>
-        <div class="col-sm-4 pb-2 fw-bolder">Containers &amp; Orchestration</div>
-        <div class="col-sm-8 pb-3">Docker, Kubernetes</div>
-        <div class="col-sm-4 pb-2 fw-bolder">Monitoring</div>
-        <div class="col-sm-8 pb-3">CloudWatch, Nagios, Wazuh</div>
-        <div class="col-sm-4 pb-2 fw-bolder">Security</div>
-        <div class="col-sm-8 pb-3">IAM, IPsec VPN, TLS, encryption at rest, CVE remediation</div>
-        <div class="col-sm-4 pb-2 fw-bolder">Systems &amp; Virtualization</div>
-        <div class="col-sm-8 pb-3">Linux, Windows Server, VMware, Proxmox</div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
-    <div class="work-experience-section">
-      <h2 class="h2 fw-light mb-4">Work Experience</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Junior SOC Analyst <span class="text-muted h6"> E-Trust</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">September, 2025 - Present</div>
-            <ul>
-              <li>Deploy and maintain the company's IAM platform (Linux and Windows components) for enterprise clients on AWS and on-premises.</li>
-              <li>Configure site-to-site IPsec VPNs between AWS and client networks.</li>
-              <li>Implement security controls on production servers: database encryption at rest, HTTPS certificates, OAuth2 email authentication and critical CVE remediation.</li>
-              <li>Configure encrypted backups (Bareos), monitoring (Nagios) and security agents (Wazuh) on client servers.</li>
-              <li>Automated operational documentation with AI</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">IT Intern <span class="text-muted h6"> E-Trust</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">September, 2024 - September, 2025</div>
-               <ul>
-              <li>Provided internal IT support for around 100 employees and administered on-premises Windows and Linux servers.</li>
-              <li>Implemented OCS Inventory for endpoint management across ~100 employee devices, drastically reducing the time required to push updates and configuration changes.</li>
-              <li>Introduced GLPI for IT asset management (workstations, racks, phones), significantly reducing data inconsistencies and creating a full change history for the inventory.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="education">
-    <div class="education-section">
-      <h2 class="h2 fw-light mb-4">Education</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Associate Degree in Systems Analysis and Development <span class="text-muted h6">UNISINOS</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2023 - 2025</div>
-            <div> Higher technical course focused on software development, systems analysis, and technological solutions to meet business demands.</div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">Technical Course in Industrial Electronics <span class="text-muted h6"> SENAI Garibaldi</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2016 - 2018</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="certifications">
-    <div class="certifications-section">
-      <h2 class="h2 fw-light mb-4">Certifications</h2>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">AWS Certified Solutions Architect - Associate <span class="text-muted h6"> Amazon Web Services</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">April, 2026</div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">AWS Certified Cloud Practitioner <span class="text-muted h6"> Amazon Web Services</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">October, 2025</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
-    <div class="portfolio-section">
-      <h2 class="h2 fw-light mb-4">Portfolio</h2>
-      <div class="row g-0">
-        <div class="col-md-6 d-flex" data-aos="fade-left" data-aos-delay="100">
-          <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">AWS (S3, CloudFront) / Terraform / Origin Access Control</p>
-            <h3>Resume Site on AWS</h3>
-            <p class="text-muted">This site. Static files in a private S3 bucket, served over HTTPS by CloudFront. Origin Access Control lets only the distribution read the bucket, and the whole infrastructure is defined in Terraform.</p>
-            <a href="https://github.com/pedrohbortolini/cloud-resume-site">View on GitHub</a>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex" data-aos="fade-left" data-aos-delay="200">
-          <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Python / FastAPI / Docker / AWS (ECS Fargate, ALB, ECR, Secrets Manager) / OpenTofu / GitHub Actions / Prometheus</p>
-            <h3>IP Reputation API</h3>
-            <p class="text-muted">REST API that consolidates IP reputation data from AbuseIPDB and IPInfo. Runs as containers on ECS Fargate behind a load balancer, keeps API keys in Secrets Manager, and deploys through GitHub Actions with the infrastructure in OpenTofu.</p>
-            <a href="https://github.com/pedrohbortolini/ip-reputation-api">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-  <div class="contant-section">
-    <h2 class="h2 fw-light text mb-4">Contact</h2>
-    <div class="row mb-4">
-      <div class="col-12" data-aos="fade-left" data-aos-delay="200">
-        <div class="mt-4">
-          <div class="h6">
-            <i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-            <a href="mailto:pedrowbortolini@gmail.com">pedrowbortolini@gmail.com</a>
-          </div>
-          <div class="h6 mt-3">
-            <i class="fab fa-linkedin pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-            <a href="https://www.linkedin.com/in/pedrobortolini">linkedin.com/in/pedrobortolini</a>
-          </div>
-          <div class="h6 mt-3">
-            <i class="fab fa-github pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-            <a href="https://github.com/pedrohbortolini">github.com/pedrohbortolini</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-</div></div>
-    </div>
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-
-
-        <div class="my-3">
-          <div class="h4">Pedro Bortolini</div>
-          <div class="footer-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/pedrobortolini" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/pedrohbortolini" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
+              <ul>
+                <li>Deploy and maintain the company's IAM platform (Linux and Windows components) for enterprise clients on AWS and on-premises.</li>
+                <li>Configure site-to-site IPsec VPNs between AWS and client networks.</li>
+                <li>Implement security controls on production servers: database encryption at rest, HTTPS certificates, OAuth2 email authentication and critical CVE remediation.</li>
+                <li>Configure encrypted backups (Bareos), monitoring (Nagios) and security agents (Wazuh) on client servers.</li>
+                <li>Automated operational documentation with AI</li>
               </ul>
-            </nav>
+            </article>
+            <article class="entry">
+              <div class="entry-head">
+                <h3>IT Intern <span class="org">E-Trust</span></h3>
+                <p class="date">September, 2024 - September, 2025</p>
+              </div>
+              <ul>
+                <li>Provided internal IT support for around 100 employees and administered on-premises Windows and Linux servers.</li>
+                <li>Implemented OCS Inventory for endpoint management across ~100 employee devices, drastically reducing the time required to push updates and configuration changes.</li>
+                <li>Introduced GLPI for IT asset management (workstations, racks, phones), significantly reducing data inconsistencies and creating a full change history for the inventory.</li>
+              </ul>
+            </article>
           </div>
+        </div>
+      </section>
+
+      <section class="block" id="education" aria-labelledby="education-title">
+        <div class="wrap block-grid">
+          <h2 class="label" id="education-title">Education</h2>
+          <div class="entries">
+            <article class="entry">
+              <div class="entry-head">
+                <h3>Associate Degree in Systems Analysis and Development <span class="org">UNISINOS</span></h3>
+                <p class="date">2023 - 2025</p>
+              </div>
+              <p class="entry-text">Higher technical course focused on software development, systems analysis, and technological solutions to meet business demands.</p>
+            </article>
+            <article class="entry">
+              <div class="entry-head">
+                <h3>Technical Course in Industrial Electronics <span class="org">SENAI Garibaldi</span></h3>
+                <p class="date">2016 - 2018</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="certifications" aria-labelledby="certifications-title">
+        <div class="wrap block-grid">
+          <h2 class="label" id="certifications-title">Certifications</h2>
+          <div class="entries">
+            <article class="entry">
+              <div class="entry-head">
+                <h3>AWS Certified Solutions Architect - Associate <span class="org">Amazon Web Services</span></h3>
+                <p class="date">April, 2026</p>
+              </div>
+            </article>
+            <article class="entry">
+              <div class="entry-head">
+                <h3>AWS Certified Cloud Practitioner <span class="org">Amazon Web Services</span></h3>
+                <p class="date">October, 2025</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="wrap block-grid">
+          <h2 class="label" id="portfolio-title">Portfolio</h2>
+          <div class="cards">
+            <!-- The whole card is the link, so the hover lift has one clear target. -->
+            <a class="card" href="https://github.com/pedrohbortolini/cloud-resume-site">
+              <p class="card-tags" translate="no">AWS (S3, CloudFront) / Terraform / Origin Access Control</p>
+              <h3>Resume Site on AWS</h3>
+              <p class="card-text">This site. Static files in a private S3 bucket, served over HTTPS by CloudFront. Origin Access Control lets only the distribution read the bucket, and the whole infrastructure is defined in Terraform.</p>
+              <span class="card-link">View on GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+            <a class="card" href="https://github.com/pedrohbortolini/ip-reputation-api">
+              <p class="card-tags" translate="no">Python / FastAPI / Docker / AWS (ECS Fargate, ALB, ECR, Secrets Manager) / OpenTofu / GitHub Actions / Prometheus</p>
+              <h3>IP Reputation API</h3>
+              <p class="card-text">REST API that consolidates IP reputation data from AbuseIPDB and IPInfo. Runs as containers on ECS Fargate behind a load balancer, keeps API keys in Secrets Manager, and deploys through GitHub Actions with the infrastructure in OpenTofu.</p>
+              <span class="card-link">View on GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="contact" aria-labelledby="contact-title">
+        <div class="wrap block-grid">
+          <h2 class="label" id="contact-title">Contact</h2>
+          <ul class="contact">
+            <li><a href="mailto:pedrowbortolini@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>pedrowbortolini@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/pedrobortolini"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>linkedin.com/in/pedrobortolini</a></li>
+            <li><a href="https://github.com/pedrohbortolini"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>github.com/pedrohbortolini</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <span>Pedro Bortolini</span>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/pedrobortolini" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a href="https://github.com/pedrohbortolini" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
         </div>
       </div>
     </footer>
-    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
-    <script src="scripts/aos.js?ver=1.2.1"></script>
-    <script src="scripts/main.js?ver=1.2.1"></script>
   </body>
 </html>

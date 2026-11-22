@@ -17,3 +17,8 @@ tfplan
 
 # Editor settings
 .vscode/
+
+# Design work (local only)
+DESIGN.md
+.design-review/
+.playwright-cli/
