@@ -1,4 +1,4 @@
-## Previous architecture — v1
+## Previous architecture (v1)
 
 The original version of this project used S3, CloudFront, Route 53 and ACM for the static site, plus API Gateway, Lambda and DynamoDB for the visitor counter.
 
