@@ -55,9 +55,8 @@
           <h1 translate="no">Pedro Bortolini</h1>
           <p class="hero-role">Security &amp; Cloud Infrastructure</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:pedrowbortolini@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/pedrobortolini"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
-            <a class="btn btn-secondary" href="https://github.com/pedrohbortolini"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/pedrobortolini" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/pedrohbortolini" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
           </div>
         </div>
       </section>
@@ -82,12 +81,15 @@
           <h2 class="label" id="skills-title">Skills</h2>
           <!-- Grouped list instead of percentage bars: self-rated percentages carry no real information. -->
           <dl class="skills" translate="no">
-            <div><dt>Cloud</dt><dd><span class="chip">AWS</span><span class="chip">S3</span><span class="chip">CloudFront</span><span class="chip">ECS Fargate</span><span class="chip">ECR</span><span class="chip">IAM</span><span class="chip">VPC</span><span class="chip">CloudWatch</span><span class="chip">Secrets Manager</span></dd></div>
+            <div><dt>AWS Compute &amp; Containers</dt><dd><span class="chip">EC2</span><span class="chip">Lambda</span><span class="chip">ECS Fargate</span><span class="chip">ECR</span></dd></div>
+            <div><dt>AWS Networking &amp; Delivery</dt><dd><span class="chip">VPC</span><span class="chip">Application Load Balancer</span><span class="chip">Route 53</span><span class="chip">CloudFront</span><span class="chip">API Gateway</span></dd></div>
+            <div><dt>AWS Storage &amp; Databases</dt><dd><span class="chip">S3</span><span class="chip">DynamoDB</span></dd></div>
+            <div><dt>AWS Security &amp; Identity</dt><dd><span class="chip">IAM</span><span class="chip">Secrets Manager</span><span class="chip">Certificate Manager</span></dd></div>
             <div><dt>Infrastructure as Code</dt><dd><span class="chip">Terraform</span></dd></div>
             <div><dt>CI/CD</dt><dd><span class="chip">GitHub Actions</span></dd></div>
             <div><dt>Containers &amp; Orchestration</dt><dd><span class="chip">Docker</span><span class="chip">Kubernetes</span></dd></div>
             <div><dt>Monitoring</dt><dd><span class="chip">CloudWatch</span><span class="chip">Nagios</span><span class="chip">Wazuh</span></dd></div>
-            <div><dt>Security</dt><dd><span class="chip">IAM</span><span class="chip">IPsec VPN</span><span class="chip">TLS</span><span class="chip">Encryption at rest</span><span class="chip">CVE remediation</span></dd></div>
+            <div><dt>Security</dt><dd><span class="chip">IPsec VPN</span><span class="chip">TLS</span><span class="chip">Encryption at rest</span><span class="chip">CVE remediation</span></dd></div>
             <div><dt>Systems &amp; Virtualization</dt><dd><span class="chip">Linux</span><span class="chip">Windows Server</span><span class="chip">VMware</span><span class="chip">Proxmox</span></dd></div>
           </dl>
         </div>
@@ -132,7 +134,7 @@
             <article class="entry">
               <div class="entry-head">
                 <h3>Associate Degree in Systems Analysis and Development <span class="org">UNISINOS</span></h3>
-                <p class="date">2023 - 2025</p>
+                <p class="date">2023 - 2026</p>
               </div>
               <p class="entry-text">Higher technical course focused on software development, systems analysis, and technological solutions to meet business demands.</p>
             </article>
@@ -153,13 +155,13 @@
             <article class="entry">
               <div class="entry-head">
                 <h3>AWS Certified Solutions Architect - Associate <span class="org">Amazon Web Services</span></h3>
-                <p class="date">April, 2026</p>
+                <p class="date">2026</p>
               </div>
             </article>
             <article class="entry">
               <div class="entry-head">
                 <h3>AWS Certified Cloud Practitioner <span class="org">Amazon Web Services</span></h3>
-                <p class="date">October, 2025</p>
+                <p class="date">2025</p>
               </div>
             </article>
           </div>
@@ -171,13 +173,13 @@
           <h2 class="label" id="portfolio-title">Portfolio</h2>
           <div class="cards">
             <!-- The whole card is the link, so the hover lift has one clear target. -->
-            <a class="card" href="https://github.com/pedrohbortolini/cloud-resume-site">
+            <a class="card" href="https://github.com/pedrohbortolini/cloud-resume-site" target="_blank" rel="noopener noreferrer">
               <p class="card-tags" translate="no">AWS (S3, CloudFront) / Terraform / Origin Access Control</p>
               <h3>Resume Site on AWS</h3>
               <p class="card-text">This site. Static files in a private S3 bucket, served over HTTPS by CloudFront. Origin Access Control lets only the distribution read the bucket, and the whole infrastructure is defined in Terraform.</p>
               <span class="card-link">View on GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
-            <a class="card" href="https://github.com/pedrohbortolini/ip-reputation-api">
+            <a class="card" href="https://github.com/pedrohbortolini/ip-reputation-api" target="_blank" rel="noopener noreferrer">
               <p class="card-tags" translate="no">Python / FastAPI / Docker / AWS (ECS Fargate, ALB, ECR, Secrets Manager) / OpenTofu / GitHub Actions / Prometheus</p>
               <h3>IP Reputation API</h3>
               <p class="card-text">REST API that consolidates IP reputation data from AbuseIPDB and IPInfo. Runs as containers on ECS Fargate behind a load balancer, keeps API keys in Secrets Manager, and deploys through GitHub Actions with the infrastructure in OpenTofu.</p>
@@ -192,8 +194,8 @@
           <h2 class="label" id="contact-title">Contact</h2>
           <ul class="contact">
             <li><a href="mailto:pedrowbortolini@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>pedrowbortolini@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/in/pedrobortolini"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>linkedin.com/in/pedrobortolini</a></li>
-            <li><a href="https://github.com/pedrohbortolini"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>github.com/pedrohbortolini</a></li>
+            <li><a href="https://www.linkedin.com/in/pedrobortolini" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>linkedin.com/in/pedrobortolini</a></li>
+            <li><a href="https://github.com/pedrohbortolini" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>github.com/pedrohbortolini</a></li>
           </ul>
         </div>
       </section>
@@ -203,8 +205,8 @@
       <div class="wrap footer-inner">
         <span>Pedro Bortolini</span>
         <div class="footer-links">
-          <a href="https://www.linkedin.com/in/pedrobortolini" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
-          <a href="https://github.com/pedrohbortolini" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+          <a href="https://www.linkedin.com/in/pedrobortolini" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a href="https://github.com/pedrohbortolini" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
         </div>
       </div>
     </footer>
