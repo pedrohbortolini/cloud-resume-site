@@ -65,7 +65,7 @@
             <div class="header-bio mt-3">
               <div data-aos="zoom-in" data-aos-delay="0">
                 <h2 class="h1">Pedro Bortolini</h2>
-                <p>Cloud &amp; Security</p>
+                <p>Security &amp; Cloud Infrastructure</p>
               </div>
 <div class="d-print-none"></div>
                 <nav role="navigation">
@@ -87,7 +87,7 @@
       <div class="row">
         <div class="col-md-6">
           <h2 class="h2 fw-light mb-4">About me</h2>
-          <p>AWS Certified IT professional with a background in support and security (SOC). Actively developing skills in Cloud and DevOps, including Linux, Terraform (IaC), and CI/CD, through hands-on projects.</p>
+          <p>AWS Certified Solutions Architect working in security operations, where I deploy and harden systems on AWS and on-premises for enterprise clients. Outside work, I build cloud projects with Terraform, Docker and CI/CD to keep sharpening how I design and run infrastructure.</p>
         </div>
         <div class="col-md-5 offset-lg-1">
           <div class="row mt-2">
@@ -114,26 +114,21 @@
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
     <div class="skills-section">
-      <h2 class="h2 fw-light mb-4">Professional Skills</h2>
+      <h2 class="h2 fw-light mb-4">Skills</h2>
+      <!-- Grouped list instead of percentage bars: self-rated percentages carry no real information. -->
       <div class="row">
-        <div class="col-md-6">
-          <div class="mb-3"><span class="fw-bolder">CLOUD Platforms</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 50%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="mb-3"><span class="fw-bolder">Security & SOC Operations</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 30%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="mb-3"><span class="fw-bolder">Operating Systems & Scripting</span>
-            <div class="progress my-2 rounded" style="height: 20px">
-              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        
-        </div>
+        <div class="col-sm-4 pb-2 fw-bolder">Cloud</div>
+        <div class="col-sm-8 pb-3">AWS (S3, CloudFront, ECS Fargate, ALB, ECR, IAM, VPC, Secrets Manager)</div>
+        <div class="col-sm-4 pb-2 fw-bolder">Infrastructure as Code</div>
+        <div class="col-sm-8 pb-3">Terraform, OpenTofu</div>
+        <div class="col-sm-4 pb-2 fw-bolder">Containers &amp; CI/CD</div>
+        <div class="col-sm-8 pb-3">Docker, GitHub Actions</div>
+        <div class="col-sm-4 pb-2 fw-bolder">Security</div>
+        <div class="col-sm-8 pb-3">Wazuh, IAM, IPsec VPN, TLS, encryption at rest, CVE remediation</div>
+        <div class="col-sm-4 pb-2 fw-bolder">Monitoring &amp; Backup</div>
+        <div class="col-sm-8 pb-3">Prometheus, Grafana, Nagios, Bareos</div>
+        <div class="col-sm-4 pb-2 fw-bolder">Systems &amp; Programming</div>
+        <div class="col-sm-8 pb-3">Linux, Windows Server, Python</div>
       </div>
     </div>
   </div>
@@ -142,19 +137,6 @@
       <h2 class="h2 fw-light mb-4">Work Experience</h2>
       <div class="timeline">
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-          <div class="timeline-head px-4 pt-3">
-            <div class="h5">IT Intern <span class="text-muted h6"> E-Trust</span></div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">September, 2024 - September, 2025</div>
-               <ul>
-              <li>Provided internal IT support for around 100 employees and administered on-premises Windows and Linux servers.</li>
-              <li>Implemented OCS Inventory for endpoint management across ~100 employee devices, drastically reducing the time required to push updates and configuration changes.</li>
-              <li>Introduced GLPI for IT asset management (workstations, racks, phones), significantly reducing data inconsistencies and creating a full change history for the inventory.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
           <div class="timeline-head px-4 pt-3">
             <div class="h5">Junior SOC Analyst <span class="text-muted h6"> E-Trust</span></div>
           </div>
@@ -169,6 +151,19 @@
             </ul>
           </div>
         </div>
+        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">IT Intern <span class="text-muted h6"> E-Trust</span></div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            <div class="text-muted text-small mb-3">September, 2024 - September, 2025</div>
+               <ul>
+              <li>Provided internal IT support for around 100 employees and administered on-premises Windows and Linux servers.</li>
+              <li>Implemented OCS Inventory for endpoint management across ~100 employee devices, drastically reducing the time required to push updates and configuration changes.</li>
+              <li>Introduced GLPI for IT asset management (workstations, racks, phones), significantly reducing data inconsistencies and creating a full change history for the inventory.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -178,19 +173,19 @@
       <div class="timeline">
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Technical Course in Industrial Electronics <span class="text-muted h6"> SENAI Garibaldi</span>          </div>
-          </div>
-          <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2016 - 2018</div>
-          </div>
-        </div>
-        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
-          <div class="timeline-head px-4 pt-3">
             <div class="h5">Associate Degree in Systems Analysis and Development <span class="text-muted h6">UNISINOS</span>          </div>
           </div>
           <div class="timeline-body px-4 pb-4">
             <div class="text-muted text-small mb-3">2023 - 2025</div>
             <div> Higher technical course focused on software development, systems analysis, and technological solutions to meet business demands.</div>
+          </div>
+        </div>
+        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">Technical Course in Industrial Electronics <span class="text-muted h6"> SENAI Garibaldi</span>          </div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            <div class="text-muted text-small mb-3">2016 - 2018</div>
           </div>
         </div>
       </div>
@@ -223,16 +218,21 @@
     <div class="portfolio-section">
       <h2 class="h2 fw-light mb-4">Portfolio</h2>
       <div class="row g-0">
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
+        <div class="col-md-6 d-flex" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">AWS Cloud (S3, CloudFront, Route 53, Lambda, API Gateway, DynamoDB) / Serverless API / Infrastructure as Code / CI/CD / Python / JavaScript / HTML / CSS</p>
-            <h3>Cloud Resume Challenge (v1, 2025)</h3>
-            <p class="text-muted">Hands-on project demonstrating full-stack development and cloud computing skills, including static website hosting on AWS S3, building a serverless API with Lambda and DynamoDB, automating with CI/CD, and securely integrating with CloudFront.</p>
+            <p class="text-teal text-small">AWS (S3, CloudFront) / Terraform / Origin Access Control</p>
+            <h3>Resume Site on AWS</h3>
+            <p class="text-muted">This site. Static files in a private S3 bucket, served over HTTPS by CloudFront. Origin Access Control lets only the distribution read the bucket, and the whole infrastructure is defined in Terraform.</p>
+            <a href="https://github.com/pedrohbortolini/cloud-resume-site">View on GitHub</a>
           </div>
         </div>
-      </div>
-      <div class="row g-0 portfolio-reverse">
-        <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+        <div class="col-md-6 d-flex" data-aos="fade-left" data-aos-delay="200">
+          <div class="m-4 mt-md-2">
+            <p class="text-teal text-small">Python / FastAPI / Docker / AWS (ECS Fargate, ALB, ECR, Secrets Manager) / OpenTofu / GitHub Actions / Prometheus</p>
+            <h3>IP Reputation API</h3>
+            <p class="text-muted">REST API that consolidates IP reputation data from AbuseIPDB and IPInfo. Runs as containers on ECS Fargate behind a load balancer, keeps API keys in Secrets Manager, and deploys through GitHub Actions with the infrastructure in OpenTofu.</p>
+            <a href="https://github.com/pedrohbortolini/ip-reputation-api">View on GitHub</a>
+          </div>
         </div>
       </div>
     </div>
@@ -241,7 +241,7 @@
   <div class="contant-section">
     <h2 class="h2 fw-light text mb-4">Contact</h2>
     <div class="row mb-4">
-      <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+      <div class="col-12" data-aos="fade-left" data-aos-delay="200">
         <div class="mt-4">
           <div class="h6">
             <i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
@@ -258,13 +258,6 @@
         </div>
       </div>
 
-      <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220896.07345100044!2d-51.34195665032881!3d-30.108470143739076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199cd2566acb1d%3A0x603111a89f87e91f!2sPorto%20Alegre%2C%20RS!5e0!3m2!1sen!2sbr!4v1757267879051!5m2!1sen!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
     </div>
   </div>
 </div>
