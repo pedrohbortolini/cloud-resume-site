@@ -12,3 +12,8 @@ output "site_url" {
   description = "Public URL of the site."
   value       = "https://${aws_cloudfront_distribution.site.domain_name}"
 }
+
+output "name_servers" {
+  description = "Set these as the DNS servers of the domain at Registro.br."
+  value       = aws_route53_zone.site.name_servers
+}

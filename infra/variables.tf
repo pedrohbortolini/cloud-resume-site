@@ -9,3 +9,9 @@ variable "project_name" {
   type        = string
   default     = "cloud-resume-site"
 }
+
+variable "domain_name" {
+  description = "Apex domain of the site. Registered at Registro.br; DNS is delegated to Route 53."
+  type        = string
+  default     = "pedrobortolini.com.br"
+}
