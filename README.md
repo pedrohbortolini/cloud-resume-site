@@ -21,12 +21,11 @@ flowchart LR
 
 - The bucket is never public. Its policy only trusts this CloudFront distribution.
 - No long-lived access keys. The v1 deploy pipeline used one and was removed.
-- Terraform state stays local and out of Git.
+- Terraform state lives in a versioned, encrypted S3 bucket with native locking, created by [`infra/bootstrap/`](infra/bootstrap/).
 - Cost is effectively zero, within the CloudFront and S3 free tiers.
 
 ## Next steps
 
-- Remote Terraform state in S3
 - Custom domain with ACM and Route 53
 - Deploy pipeline with GitHub Actions and OIDC
 

@@ -1,0 +1,2 @@
+# Copy to backend.hcl and fill in the bucket from `terraform output state_bucket` in bootstrap/.
+bucket = "cloud-resume-tfstate-xxxxxxxx"

@@ -22,3 +22,6 @@ tfplan
 DESIGN.md
 .design-review/
 .playwright-cli/
+
+# Backend settings with the real bucket name
+infra/backend.hcl
