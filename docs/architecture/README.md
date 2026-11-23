@@ -4,11 +4,12 @@
 
 ```mermaid
 flowchart LR
-    visitor(["Visitor"]) -- "HTTPS" --> cf["CloudFront"]
+    visitor(["Visitor"]) -- "DNS" --> r53["Route 53"]
+    visitor -- "HTTPS" --> cf["CloudFront<br/>ACM certificate"]
     cf -- "Origin Access Control" --> s3[("S3 bucket<br/>private")]
 ```
 
-A private S3 bucket served through CloudFront, all defined in Terraform. The bucket policy allows reads only from this distribution.
+A private S3 bucket served through CloudFront on a custom domain, all defined in Terraform. The bucket policy allows reads only from this distribution.
 
 ## v1 (2025)
 

@@ -10,6 +10,11 @@ output "distribution_id" {
 
 output "site_url" {
   description = "Public URL of the site."
+  value       = "https://${var.domain_name}"
+}
+
+output "cloudfront_url" {
+  description = "Default CloudFront address, still reachable."
   value       = "https://${aws_cloudfront_distribution.site.domain_name}"
 }
 

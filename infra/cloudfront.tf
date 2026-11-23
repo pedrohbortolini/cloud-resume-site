@@ -46,9 +46,14 @@ resource "aws_cloudfront_distribution" "site" {
     }
   }
 
-  # No custom domain yet, so the site uses the default *.cloudfront.net
-  # certificate. A custom domain needs an ACM certificate in us-east-1.
+  # The custom domain and its www name; both serve the same site.
+  aliases = [var.domain_name, "www.${var.domain_name}"]
+
+  # Uses the validated certificate, so the distribution only switches over once
+  # ACM has issued it. SNI is free (a dedicated IP costs $600/month).
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = aws_acm_certificate_validation.site.certificate_arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 }
