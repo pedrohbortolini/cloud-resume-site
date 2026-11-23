@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pedro Bortolini | Resume">
     <meta property="og:description" content="AWS Certified Solutions Architect working in security operations.">
-    <meta property="og:image" content="images/avatar.jpg">
+    <meta property="og:image" content="images/avatar-large.jpg">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23171717'/%3E%3Ctext x='16' y='21.5' font-family='system-ui,sans-serif' font-size='15' font-weight='600' fill='%23fff' text-anchor='middle'%3EPB%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,9 @@
         <!-- Soft mesh gradient: the only decoration on the page, kept behind the hero. -->
         <div class="hero-glow" aria-hidden="true"></div>
         <div class="wrap hero-inner">
-          <img class="avatar" src="images/avatar.jpg" alt="Portrait of Pedro Bortolini" width="112" height="112" fetchpriority="high">
+          <button class="avatar-btn" type="button" id="photo-open" aria-haspopup="dialog" aria-label="Open photo of Pedro Bortolini">
+            <img class="avatar" src="images/avatar.jpg" alt="Portrait of Pedro Bortolini" width="112" height="112" fetchpriority="high">
+          </button>
           <h1 translate="no">Pedro Bortolini</h1>
           <p class="hero-role">Security &amp; Cloud Infrastructure</p>
           <div class="hero-actions">
@@ -207,5 +209,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Photo viewer: native <dialog> gives Esc to close, focus trapping and a backdrop for free. -->
+    <dialog class="photo" id="photo" aria-label="Photo of Pedro Bortolini">
+      <img src="images/avatar-large.jpg" alt="Portrait of Pedro Bortolini" width="1600" height="1066" loading="lazy">
+      <button class="photo-close" type="button" aria-label="Close photo">&times;</button>
+    </dialog>
+    <script>
+      // Any click while open (image, backdrop or the close button) closes the viewer.
+      const photo = document.getElementById('photo');
+      document.getElementById('photo-open').addEventListener('click', () => photo.showModal());
+      photo.addEventListener('click', () => photo.close());
+    </script>
   </body>
 </html>

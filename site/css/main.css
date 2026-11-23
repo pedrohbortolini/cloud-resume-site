@@ -147,9 +147,55 @@ img { display: block; max-width: 100%; }
   height: 112px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: 47% 35%;   /* source is landscape; keep the face centred in the circle */
   border: 1px solid var(--hairline);
   box-shadow: 0 0 0 4px #fff, 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s var(--ease);
+}
+
+/* The avatar is a button that opens the full photo. */
+.avatar-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 50%;
+  cursor: zoom-in;
+}
+.avatar-btn:hover .avatar { transform: scale(1.03); }
+
+.photo {
+  padding: 0;
+  border: 0;
+  background: none;
+  width: min(92vw, 1100px);   /* explicit width: the image's 100% needs a sized parent */
+  max-width: none;
+  overflow: visible;
+  cursor: zoom-out;
+}
+.photo::backdrop { background: rgba(0, 0, 0, 0.75); }
+.photo img {
+  width: 100%;
+  height: auto;
+  max-height: 86vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.photo-close {
+  position: absolute;
+  top: -52px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+.photo-close:hover { background: rgba(255, 255, 255, 0.28); }
+@media (prefers-reduced-motion: no-preference) {
+  .photo[open] { animation: rise 0.25s var(--ease); }
 }
 .hero h1 {
   margin-top: 28px;
